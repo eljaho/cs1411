@@ -1,0 +1,6 @@
+firstName = input("Enter your first name in all lowercase: ")
+lastName = input("Enter your last name in all lowercase: ")
+username = (firstName[:1] + lastName[:7]).lower()
+password = (lastName[-2:] * 2 + firstName[:3] + '8' + lastName[:1]).lower()
+print(username)
+print(password)
